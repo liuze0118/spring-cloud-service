@@ -1,0 +1,412 @@
+2020-09-23 14:14:15.823 ERROR [main]org.springframework.boot.SpringApplication -Application run failed
+org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'logging.level' to java.util.Map<java.lang.String, org.springframework.boot.logging.LogLevel>
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:363)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:323)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:308)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:238)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:212)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.setLogLevels(LoggingApplicationListener.java:364)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeFinalLoggingLevels(LoggingApplicationListener.java:331)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:239)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:80)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:212)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:117)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:74)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:80)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.cloud.lz.userservice.UserServiceApplication.main(UserServiceApplication.java:19)
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.Map<java.lang.String, org.springframework.boot.logging.LogLevel>]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:321)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:194)
+	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:170)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:96)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:88)
+	at org.springframework.boot.context.properties.bind.MapBinder.bindAggregate(MapBinder.java:64)
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$3(Binder.java:414)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:571)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:512)
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:414)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:375)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:319)
+	... 31 common frames omitted
+2020-09-23 14:14:15.827 ERROR [main]org.springframework.boot.SpringApplication -Application run failed
+org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'logging.level' to java.util.Map<java.lang.String, org.springframework.boot.logging.LogLevel>
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:363)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:323)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:308)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:238)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:212)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.setLogLevels(LoggingApplicationListener.java:364)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeFinalLoggingLevels(LoggingApplicationListener.java:331)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:239)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:80)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:212)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:117)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:74)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:80)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.cloud.lz.userservice.UserServiceApplication.main(UserServiceApplication.java:19)
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.Map<java.lang.String, org.springframework.boot.logging.LogLevel>]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:321)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:194)
+	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:170)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:96)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:88)
+	at org.springframework.boot.context.properties.bind.MapBinder.bindAggregate(MapBinder.java:64)
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$3(Binder.java:414)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:571)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:512)
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:414)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:375)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:319)
+	... 31 common frames omitted
+2020-09-23 14:15:47.137 INFO  [main]org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -Fetching config from server at : http://192.168.0.102:8020/
+2020-09-23 14:15:49.790 INFO  [main]org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -Located environment: name=user-service, profiles=[dev], label=master, version=fbf8b195e6d096198b1a94448f3a5043163fcc69, state=null
+2020-09-23 14:15:49.793 INFO  [main]org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration -Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/liuze0118/my-config.git/user-service-dev.yml'}]
+2020-09-23 14:15:49.826 INFO  [main]com.cloud.lz.userservice.UserServiceApplication -The following profiles are active: dev
+2020-09-23 14:15:51.364 WARN  [main]org.springframework.boot.actuate.endpoint.EndpointId -Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+2020-09-23 14:15:51.736 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 14:15:51.737 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-09-23 14:15:51.798 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cloud.lz.userservice.dao.UserDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-09-23 14:15:51.799 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 53ms. Found 0 JDBC repository interfaces.
+2020-09-23 14:15:51.813 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 14:15:51.813 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 14:15:51.887 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 67ms. Found 1 JPA repository interfaces.
+2020-09-23 14:15:51.965 WARN  [main]org.springframework.boot.actuate.endpoint.EndpointId -Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+2020-09-23 14:15:52.084 WARN  [main]org.springframework.boot.actuate.endpoint.EndpointId -Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-23 14:15:52.366 INFO  [main]org.springframework.cloud.context.scope.GenericScope -BeanFactory id=5ff7043a-c80c-3604-a296-06012f8a1de7
+2020-09-23 14:15:52.504 INFO  [main]org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor -No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-09-23 14:15:52.518 INFO  [main]org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor -No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-09-23 14:15:52.714 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:15:52.717 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:15:52.745 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:15:52.752 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:15:52.771 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:15:52.777 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:15:53.366 INFO  [main]org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+2020-09-23 14:15:53.380 INFO  [main]org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-23 14:15:53.381 INFO  [main]org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-09-23 14:15:53.381 INFO  [main]org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-09-23 14:15:53.790 INFO  [main]org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-09-23 14:15:53.790 INFO  [main]org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3943 ms
+2020-09-23 14:15:53.981 WARN  [main]com.netflix.config.sources.URLConfigurationSource -No URLs will be polled as dynamic configuration sources.
+2020-09-23 14:15:53.981 INFO  [main]com.netflix.config.sources.URLConfigurationSource -To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 14:15:53.999 INFO  [main]com.netflix.config.DynamicPropertyFactory -DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@162b41e
+2020-09-23 14:15:54.577 INFO  [main]org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 14:15:54.596 INFO  [main]org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler -Initializing ExecutorService 'taskScheduler'
+2020-09-23 14:15:54.664 INFO  [task-1]org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 14:15:54.731 WARN  [main]com.netflix.config.sources.URLConfigurationSource -No URLs will be polled as dynamic configuration sources.
+2020-09-23 14:15:54.731 INFO  [main]com.netflix.config.sources.URLConfigurationSource -To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 14:15:54.783 INFO  [task-1]org.hibernate.Version -HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-09-23 14:15:54.860 WARN  [main]org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 14:15:55.062 INFO  [task-1]org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 14:15:57.143 INFO  [task-1]com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+2020-09-23 14:15:57.173 INFO  [task-1]org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-09-23 14:15:58.358 INFO  [task-1]org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 14:15:58.371 INFO  [task-1]org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 14:16:00.603 INFO  [main]org.springframework.cloud.stream.function.FunctionConfiguration$FunctionBindingRegistrar -Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2020-09-23 14:16:01.818 INFO  [main]org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration -Eureka HTTP Client uses Jersey
+2020-09-23 14:16:01.871 WARN  [main]org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger -You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-09-23 14:16:01.994 INFO  [main]org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver -Exposing 22 endpoint(s) beneath base path '/actuator'
+2020-09-23 14:16:02.200 INFO  [main]org.springframework.cloud.stream.messaging.DirectWithAttributesChannel -Channel 'user-service-1.springCloudBusInput' has 1 subscriber(s).
+2020-09-23 14:16:02.398 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageChannel errorChannel
+2020-09-23 14:16:02.564 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageChannel springCloudBusInput
+2020-09-23 14:16:02.637 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageChannel nullChannel
+2020-09-23 14:16:02.662 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageChannel springCloudBusOutput
+2020-09-23 14:16:02.682 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@14fcedd
+2020-09-23 14:16:02.841 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageHandler errorLogger
+2020-09-23 14:16:02.940 INFO  [main]org.springframework.integration.endpoint.EventDrivenConsumer -Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-09-23 14:16:02.940 INFO  [main]org.springframework.integration.channel.PublishSubscribeChannel -Channel 'user-service-1.errorChannel' has 1 subscriber(s).
+2020-09-23 14:16:02.941 INFO  [main]org.springframework.integration.endpoint.EventDrivenConsumer -started bean '_org.springframework.integration.errorLogger'
+2020-09-23 14:16:02.942 INFO  [main]org.springframework.cloud.stream.binder.DefaultBinderFactory -Creating binder: rabbit
+2020-09-23 14:16:03.626 INFO  [main]org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -Fetching config from server at : http://192.168.0.102:8020/
+2020-09-23 14:16:06.862 INFO  [main]org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -Located environment: name=user-service, profiles=[dev], label=master, version=fbf8b195e6d096198b1a94448f3a5043163fcc69, state=null
+2020-09-23 14:16:06.863 INFO  [main]org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration -Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/liuze0118/my-config.git/user-service-dev.yml'}]
+2020-09-23 14:16:07.040 INFO  [main]org.springframework.data.repository.config.DeferredRepositoryInitializationListener -Triggering deferred initialization of Spring Data repositories…
+2020-09-23 14:16:07.256 INFO  [main]org.springframework.data.repository.config.DeferredRepositoryInitializationListener -Spring Data repositories initialized!
+2020-09-23 14:16:07.423 INFO  [main]org.springframework.cloud.stream.binder.DefaultBinderFactory -Caching the binder: rabbit
+2020-09-23 14:16:07.424 INFO  [main]org.springframework.cloud.stream.binder.DefaultBinderFactory -Retrieving cached binder: rabbit
+2020-09-23 14:16:07.587 INFO  [main]org.springframework.amqp.rabbit.connection.CachingConnectionFactory -Attempting to connect to: [47.94.237.238:5672]
+2020-09-23 14:16:07.659 INFO  [main]org.springframework.amqp.rabbit.connection.CachingConnectionFactory -Created new connection: rabbitConnectionFactory#15076f9:0/SimpleConnection@34529e [delegate=amqp://admin@47.94.237.238:5672/, localPort= 57781]
+2020-09-23 14:16:07.717 INFO  [main]org.springframework.cloud.stream.messaging.DirectWithAttributesChannel -Channel 'user-service-1.springCloudBusOutput' has 1 subscriber(s).
+2020-09-23 14:16:07.734 INFO  [main]org.springframework.cloud.netflix.eureka.InstanceInfoFactory -Setting initial instance status as: STARTING
+2020-09-23 14:16:07.791 INFO  [main]com.netflix.discovery.DiscoveryClient -Initializing Eureka in region us-east-1
+2020-09-23 14:16:07.894 INFO  [main]com.netflix.discovery.provider.DiscoveryJerseyProvider -Using JSON encoding codec LegacyJacksonJson
+2020-09-23 14:16:07.894 INFO  [main]com.netflix.discovery.provider.DiscoveryJerseyProvider -Using JSON decoding codec LegacyJacksonJson
+2020-09-23 14:16:08.098 INFO  [main]com.netflix.discovery.provider.DiscoveryJerseyProvider -Using XML encoding codec XStreamXml
+2020-09-23 14:16:08.098 INFO  [main]com.netflix.discovery.provider.DiscoveryJerseyProvider -Using XML decoding codec XStreamXml
+2020-09-23 14:16:08.400 INFO  [main]com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -Resolving eureka endpoints via configuration
+2020-09-23 14:16:08.816 INFO  [main]com.netflix.discovery.DiscoveryClient -Disable delta property : false
+2020-09-23 14:16:08.816 INFO  [main]com.netflix.discovery.DiscoveryClient -Single vip registry refresh property : null
+2020-09-23 14:16:08.816 INFO  [main]com.netflix.discovery.DiscoveryClient -Force full registry fetch : false
+2020-09-23 14:16:08.817 INFO  [main]com.netflix.discovery.DiscoveryClient -Application is null : false
+2020-09-23 14:16:08.817 INFO  [main]com.netflix.discovery.DiscoveryClient -Registered Applications size is zero : true
+2020-09-23 14:16:08.817 INFO  [main]com.netflix.discovery.DiscoveryClient -Application version is -1: true
+2020-09-23 14:16:08.817 INFO  [main]com.netflix.discovery.DiscoveryClient -Getting all instance registry info from the eureka server
+2020-09-23 14:16:09.150 INFO  [main]com.netflix.discovery.DiscoveryClient -The response status is 200
+2020-09-23 14:16:09.161 INFO  [main]com.netflix.discovery.DiscoveryClient -Starting heartbeat executor: renew interval is: 30
+2020-09-23 14:16:09.164 INFO  [main]com.netflix.discovery.InstanceInfoReplicator -InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-09-23 14:16:09.171 INFO  [main]com.netflix.discovery.DiscoveryClient -Discovery Client initialized at timestamp 1600841769169 with initial instances count: 2
+2020-09-23 14:16:09.176 INFO  [main]org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry -Registering application USER-SERVICE with eureka with status UP
+2020-09-23 14:16:09.177 INFO  [main]com.netflix.discovery.DiscoveryClient -Saw local status change event StatusChangeEvent [timestamp=1600841769177, current=UP, previous=STARTING]
+2020-09-23 14:16:09.180 INFO  [main]org.springframework.cloud.stream.binder.DefaultBinderFactory -Retrieving cached binder: rabbit
+2020-09-23 14:16:09.181 INFO  [DiscoveryClient-InstanceInfoReplicator-0]com.netflix.discovery.DiscoveryClient -DiscoveryClient_USER-SERVICE/192.168.0.102:user-service:8081: registering service...
+2020-09-23 14:16:09.235 INFO  [DiscoveryClient-InstanceInfoReplicator-0]com.netflix.discovery.DiscoveryClient -DiscoveryClient_USER-SERVICE/192.168.0.102:user-service:8081 - registration status: 204
+2020-09-23 14:16:09.294 INFO  [main]org.springframework.cloud.stream.binder.rabbit.provisioning.RabbitExchangeQueueProvisioner -declaring queue for inbound: springCloudBus.anonymous.nBoT5pbIRVKv8YFd6FST6Q, bound to: springCloudBus
+2020-09-23 14:16:09.335 INFO  [main]org.springframework.cloud.stream.binder.BinderErrorChannel -Channel 'springCloudBus.anonymous.nBoT5pbIRVKv8YFd6FST6Q.errors' has 1 subscriber(s).
+2020-09-23 14:16:09.335 INFO  [main]org.springframework.cloud.stream.binder.BinderErrorChannel -Channel 'springCloudBus.anonymous.nBoT5pbIRVKv8YFd6FST6Q.errors' has 2 subscriber(s).
+2020-09-23 14:16:09.374 INFO  [main]org.springframework.integration.amqp.inbound.AmqpInboundChannelAdapter -started bean 'inbound.springCloudBus.anonymous.nBoT5pbIRVKv8YFd6FST6Q'
+2020-09-23 14:16:09.376 INFO  [main]org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+2020-09-23 14:16:09.426 INFO  [main]org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-23 14:16:09.428 INFO  [main]org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration -Updating port to 8081
+2020-09-23 14:16:10.021 INFO  [main]org.springframework.data.repository.config.DeferredRepositoryInitializationListener -Triggering deferred initialization of Spring Data repositories…
+2020-09-23 14:16:10.022 INFO  [main]org.springframework.data.repository.config.DeferredRepositoryInitializationListener -Spring Data repositories initialized!
+2020-09-23 14:16:10.083 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageChannel springCloudBus.anonymous.nBoT5pbIRVKv8YFd6FST6Q.errors
+2020-09-23 14:16:10.446 INFO  [main]com.cloud.lz.userservice.UserServiceApplication -Started UserServiceApplication in 26.469 seconds (JVM running for 27.976)
+2020-09-23 14:21:08.820 INFO  [AsyncResolver-bootstrap-executor-0]com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -Resolving eureka endpoints via configuration
+2020-09-23 14:22:02.685 INFO  [main]org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -Fetching config from server at : http://192.168.0.102:8020/
+2020-09-23 14:22:05.002 INFO  [main]org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -Located environment: name=user-service, profiles=[dev], label=master, version=fbf8b195e6d096198b1a94448f3a5043163fcc69, state=null
+2020-09-23 14:22:05.004 INFO  [main]org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration -Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/liuze0118/my-config.git/user-service-dev.yml'}]
+2020-09-23 14:22:05.045 INFO  [main]com.cloud.lz.userservice.UserServiceApplication -The following profiles are active: dev
+2020-09-23 14:22:06.650 WARN  [main]org.springframework.boot.actuate.endpoint.EndpointId -Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+2020-09-23 14:22:06.995 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 14:22:06.996 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-09-23 14:22:07.046 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cloud.lz.userservice.dao.UserDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-09-23 14:22:07.047 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 43ms. Found 0 JDBC repository interfaces.
+2020-09-23 14:22:07.061 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 14:22:07.062 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 14:22:07.140 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 66ms. Found 1 JPA repository interfaces.
+2020-09-23 14:22:07.226 WARN  [main]org.springframework.boot.actuate.endpoint.EndpointId -Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+2020-09-23 14:22:07.347 WARN  [main]org.springframework.boot.actuate.endpoint.EndpointId -Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-23 14:22:07.635 INFO  [main]org.springframework.cloud.context.scope.GenericScope -BeanFactory id=5ff7043a-c80c-3604-a296-06012f8a1de7
+2020-09-23 14:22:07.776 INFO  [main]org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor -No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-09-23 14:22:07.791 INFO  [main]org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor -No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-09-23 14:22:07.986 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:22:07.990 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:22:08.017 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:22:08.024 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:22:08.037 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:22:08.049 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:22:08.703 INFO  [main]org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+2020-09-23 14:22:08.722 INFO  [main]org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-23 14:22:08.723 INFO  [main]org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-09-23 14:22:08.723 INFO  [main]org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-09-23 14:22:09.076 INFO  [main]org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-09-23 14:22:09.077 INFO  [main]org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 4010 ms
+2020-09-23 14:22:09.274 WARN  [main]com.netflix.config.sources.URLConfigurationSource -No URLs will be polled as dynamic configuration sources.
+2020-09-23 14:22:09.274 INFO  [main]com.netflix.config.sources.URLConfigurationSource -To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 14:22:09.294 INFO  [main]com.netflix.config.DynamicPropertyFactory -DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1d1ad8a
+2020-09-23 14:22:09.900 INFO  [main]org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 14:22:09.922 INFO  [main]org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler -Initializing ExecutorService 'taskScheduler'
+2020-09-23 14:22:09.985 INFO  [task-1]org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 14:22:10.049 WARN  [main]com.netflix.config.sources.URLConfigurationSource -No URLs will be polled as dynamic configuration sources.
+2020-09-23 14:22:10.050 INFO  [main]com.netflix.config.sources.URLConfigurationSource -To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 14:22:10.078 INFO  [task-1]org.hibernate.Version -HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-09-23 14:22:10.195 WARN  [main]org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 14:22:10.315 INFO  [task-1]org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 14:22:12.369 INFO  [task-1]com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+2020-09-23 14:22:12.395 INFO  [task-1]org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-09-23 14:22:13.379 INFO  [task-1]org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 14:22:13.391 INFO  [task-1]org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 14:22:15.573 INFO  [main]org.springframework.cloud.stream.function.FunctionConfiguration$FunctionBindingRegistrar -Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2020-09-23 14:22:16.765 INFO  [main]org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration -Eureka HTTP Client uses Jersey
+2020-09-23 14:22:16.831 WARN  [main]org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger -You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-09-23 14:22:16.940 INFO  [main]org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver -Exposing 22 endpoint(s) beneath base path '/actuator'
+2020-09-23 14:22:17.151 INFO  [main]org.springframework.cloud.stream.messaging.DirectWithAttributesChannel -Channel 'user-service-1.springCloudBusInput' has 1 subscriber(s).
+2020-09-23 14:22:17.383 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageChannel nullChannel
+2020-09-23 14:22:17.430 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageChannel errorChannel
+2020-09-23 14:22:17.589 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageChannel springCloudBusOutput
+2020-09-23 14:22:17.662 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageChannel springCloudBusInput
+2020-09-23 14:22:17.684 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageHandler errorLogger
+2020-09-23 14:22:17.728 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@1f579d2
+2020-09-23 14:22:17.934 INFO  [main]org.springframework.integration.endpoint.EventDrivenConsumer -Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-09-23 14:22:17.934 INFO  [main]org.springframework.integration.channel.PublishSubscribeChannel -Channel 'user-service-1.errorChannel' has 1 subscriber(s).
+2020-09-23 14:22:17.934 INFO  [main]org.springframework.integration.endpoint.EventDrivenConsumer -started bean '_org.springframework.integration.errorLogger'
+2020-09-23 14:22:17.936 INFO  [main]org.springframework.cloud.stream.binder.DefaultBinderFactory -Creating binder: rabbit
+2020-09-23 14:22:18.624 INFO  [main]org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -Fetching config from server at : http://192.168.0.102:8020/
+2020-09-23 14:22:22.931 INFO  [main]org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -Located environment: name=user-service, profiles=[dev], label=master, version=fbf8b195e6d096198b1a94448f3a5043163fcc69, state=null
+2020-09-23 14:22:22.931 INFO  [main]org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration -Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/liuze0118/my-config.git/user-service-dev.yml'}]
+2020-09-23 14:22:23.110 INFO  [main]org.springframework.data.repository.config.DeferredRepositoryInitializationListener -Triggering deferred initialization of Spring Data repositories…
+2020-09-23 14:22:23.313 INFO  [main]org.springframework.data.repository.config.DeferredRepositoryInitializationListener -Spring Data repositories initialized!
+2020-09-23 14:22:23.475 INFO  [main]org.springframework.cloud.stream.binder.DefaultBinderFactory -Caching the binder: rabbit
+2020-09-23 14:22:23.475 INFO  [main]org.springframework.cloud.stream.binder.DefaultBinderFactory -Retrieving cached binder: rabbit
+2020-09-23 14:22:23.653 INFO  [main]org.springframework.amqp.rabbit.connection.CachingConnectionFactory -Attempting to connect to: [47.94.237.238:5672]
+2020-09-23 14:22:23.728 INFO  [main]org.springframework.amqp.rabbit.connection.CachingConnectionFactory -Created new connection: rabbitConnectionFactory#1a01901:0/SimpleConnection@18230cd [delegate=amqp://admin@47.94.237.238:5672/, localPort= 57995]
+2020-09-23 14:22:23.789 INFO  [main]org.springframework.cloud.stream.messaging.DirectWithAttributesChannel -Channel 'user-service-1.springCloudBusOutput' has 1 subscriber(s).
+2020-09-23 14:22:23.805 INFO  [main]org.springframework.cloud.netflix.eureka.InstanceInfoFactory -Setting initial instance status as: STARTING
+2020-09-23 14:22:23.864 INFO  [main]com.netflix.discovery.DiscoveryClient -Initializing Eureka in region us-east-1
+2020-09-23 14:22:23.962 INFO  [main]com.netflix.discovery.provider.DiscoveryJerseyProvider -Using JSON encoding codec LegacyJacksonJson
+2020-09-23 14:22:23.963 INFO  [main]com.netflix.discovery.provider.DiscoveryJerseyProvider -Using JSON decoding codec LegacyJacksonJson
+2020-09-23 14:22:24.157 INFO  [main]com.netflix.discovery.provider.DiscoveryJerseyProvider -Using XML encoding codec XStreamXml
+2020-09-23 14:22:24.157 INFO  [main]com.netflix.discovery.provider.DiscoveryJerseyProvider -Using XML decoding codec XStreamXml
+2020-09-23 14:22:24.458 INFO  [main]com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -Resolving eureka endpoints via configuration
+2020-09-23 14:22:24.897 INFO  [main]com.netflix.discovery.DiscoveryClient -Disable delta property : false
+2020-09-23 14:22:24.897 INFO  [main]com.netflix.discovery.DiscoveryClient -Single vip registry refresh property : null
+2020-09-23 14:22:24.897 INFO  [main]com.netflix.discovery.DiscoveryClient -Force full registry fetch : false
+2020-09-23 14:22:24.897 INFO  [main]com.netflix.discovery.DiscoveryClient -Application is null : false
+2020-09-23 14:22:24.897 INFO  [main]com.netflix.discovery.DiscoveryClient -Registered Applications size is zero : true
+2020-09-23 14:22:24.898 INFO  [main]com.netflix.discovery.DiscoveryClient -Application version is -1: true
+2020-09-23 14:22:24.898 INFO  [main]com.netflix.discovery.DiscoveryClient -Getting all instance registry info from the eureka server
+2020-09-23 14:22:25.234 INFO  [main]com.netflix.discovery.DiscoveryClient -The response status is 200
+2020-09-23 14:22:25.238 INFO  [main]com.netflix.discovery.DiscoveryClient -Starting heartbeat executor: renew interval is: 30
+2020-09-23 14:22:25.242 INFO  [main]com.netflix.discovery.InstanceInfoReplicator -InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-09-23 14:22:25.248 INFO  [main]com.netflix.discovery.DiscoveryClient -Discovery Client initialized at timestamp 1600842145247 with initial instances count: 3
+2020-09-23 14:22:25.254 INFO  [main]org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry -Registering application USER-SERVICE with eureka with status UP
+2020-09-23 14:22:25.255 INFO  [main]com.netflix.discovery.DiscoveryClient -Saw local status change event StatusChangeEvent [timestamp=1600842145255, current=UP, previous=STARTING]
+2020-09-23 14:22:25.258 INFO  [main]org.springframework.cloud.stream.binder.DefaultBinderFactory -Retrieving cached binder: rabbit
+2020-09-23 14:22:25.258 INFO  [DiscoveryClient-InstanceInfoReplicator-0]com.netflix.discovery.DiscoveryClient -DiscoveryClient_USER-SERVICE/192.168.0.102:user-service:8081: registering service...
+2020-09-23 14:22:25.313 INFO  [DiscoveryClient-InstanceInfoReplicator-0]com.netflix.discovery.DiscoveryClient -DiscoveryClient_USER-SERVICE/192.168.0.102:user-service:8081 - registration status: 204
+2020-09-23 14:22:25.380 INFO  [main]org.springframework.cloud.stream.binder.rabbit.provisioning.RabbitExchangeQueueProvisioner -declaring queue for inbound: springCloudBus.anonymous.W62zjQpTQf6IZCiW-4ebgg, bound to: springCloudBus
+2020-09-23 14:22:25.429 INFO  [main]org.springframework.cloud.stream.binder.BinderErrorChannel -Channel 'springCloudBus.anonymous.W62zjQpTQf6IZCiW-4ebgg.errors' has 1 subscriber(s).
+2020-09-23 14:22:25.430 INFO  [main]org.springframework.cloud.stream.binder.BinderErrorChannel -Channel 'springCloudBus.anonymous.W62zjQpTQf6IZCiW-4ebgg.errors' has 2 subscriber(s).
+2020-09-23 14:22:25.472 INFO  [main]org.springframework.integration.amqp.inbound.AmqpInboundChannelAdapter -started bean 'inbound.springCloudBus.anonymous.W62zjQpTQf6IZCiW-4ebgg'
+2020-09-23 14:22:25.475 INFO  [main]org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+2020-09-23 14:22:25.522 INFO  [main]org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-23 14:22:25.524 INFO  [main]org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration -Updating port to 8081
+2020-09-23 14:22:26.098 INFO  [main]org.springframework.data.repository.config.DeferredRepositoryInitializationListener -Triggering deferred initialization of Spring Data repositories…
+2020-09-23 14:22:26.100 INFO  [main]org.springframework.data.repository.config.DeferredRepositoryInitializationListener -Spring Data repositories initialized!
+2020-09-23 14:22:26.158 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageChannel springCloudBus.anonymous.W62zjQpTQf6IZCiW-4ebgg.errors
+2020-09-23 14:22:26.547 INFO  [main]com.cloud.lz.userservice.UserServiceApplication -Started UserServiceApplication in 27.241 seconds (JVM running for 28.821)
+2020-09-23 14:27:24.902 INFO  [AsyncResolver-bootstrap-executor-0]com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -Resolving eureka endpoints via configuration
+2020-09-23 14:30:32.610 INFO  [main]org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -Fetching config from server at : http://192.168.0.102:8020/
+2020-09-23 14:30:35.824 INFO  [main]org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -Located environment: name=user-service, profiles=[dev], label=master, version=fbf8b195e6d096198b1a94448f3a5043163fcc69, state=null
+2020-09-23 14:30:35.826 INFO  [main]org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration -Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/liuze0118/my-config.git/user-service-dev.yml'}]
+2020-09-23 14:30:35.871 INFO  [main]com.cloud.lz.userservice.UserServiceApplication -The following profiles are active: dev
+2020-09-23 14:30:37.395 WARN  [main]org.springframework.boot.actuate.endpoint.EndpointId -Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+2020-09-23 14:30:37.742 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 14:30:37.743 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-09-23 14:30:37.790 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cloud.lz.userservice.dao.UserDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-09-23 14:30:37.791 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 42ms. Found 0 JDBC repository interfaces.
+2020-09-23 14:30:37.808 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 14:30:37.808 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 14:30:37.882 INFO  [main]org.springframework.data.repository.config.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 67ms. Found 1 JPA repository interfaces.
+2020-09-23 14:30:37.962 WARN  [main]org.springframework.boot.actuate.endpoint.EndpointId -Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+2020-09-23 14:30:38.085 WARN  [main]org.springframework.boot.actuate.endpoint.EndpointId -Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-23 14:30:38.363 INFO  [main]org.springframework.cloud.context.scope.GenericScope -BeanFactory id=5ff7043a-c80c-3604-a296-06012f8a1de7
+2020-09-23 14:30:38.501 INFO  [main]org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor -No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-09-23 14:30:38.516 INFO  [main]org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor -No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-09-23 14:30:38.711 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:30:38.714 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:30:38.740 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:30:38.747 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:30:38.765 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:30:38.774 INFO  [main]org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-23 14:30:39.449 INFO  [main]org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+2020-09-23 14:30:39.465 INFO  [main]org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-23 14:30:39.465 INFO  [main]org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2020-09-23 14:30:39.466 INFO  [main]org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-09-23 14:30:39.806 INFO  [main]org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-09-23 14:30:39.806 INFO  [main]org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3914 ms
+2020-09-23 14:30:39.987 WARN  [main]com.netflix.config.sources.URLConfigurationSource -No URLs will be polled as dynamic configuration sources.
+2020-09-23 14:30:39.987 INFO  [main]com.netflix.config.sources.URLConfigurationSource -To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 14:30:40.006 INFO  [main]com.netflix.config.DynamicPropertyFactory -DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@11a0351
+2020-09-23 14:30:40.589 INFO  [main]org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 14:30:40.612 INFO  [main]org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler -Initializing ExecutorService 'taskScheduler'
+2020-09-23 14:30:40.684 INFO  [task-1]org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 14:30:40.740 WARN  [main]com.netflix.config.sources.URLConfigurationSource -No URLs will be polled as dynamic configuration sources.
+2020-09-23 14:30:40.741 INFO  [main]com.netflix.config.sources.URLConfigurationSource -To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-23 14:30:40.797 INFO  [task-1]org.hibernate.Version -HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-09-23 14:30:40.884 WARN  [main]org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 14:30:41.073 INFO  [task-1]org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 14:30:43.187 INFO  [task-1]com.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+2020-09-23 14:30:43.222 INFO  [task-1]org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-09-23 14:30:44.288 INFO  [task-1]org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 14:30:44.302 INFO  [task-1]org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 14:30:46.526 INFO  [main]org.springframework.cloud.stream.function.FunctionConfiguration$FunctionBindingRegistrar -Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2020-09-23 14:30:47.716 INFO  [main]org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration -Eureka HTTP Client uses Jersey
+2020-09-23 14:30:47.768 WARN  [main]org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger -You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-09-23 14:30:47.887 INFO  [main]org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver -Exposing 22 endpoint(s) beneath base path '/actuator'
+2020-09-23 14:30:48.093 INFO  [main]org.springframework.cloud.stream.messaging.DirectWithAttributesChannel -Channel 'user-service-1.springCloudBusInput' has 1 subscriber(s).
+2020-09-23 14:30:48.291 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageChannel nullChannel
+2020-09-23 14:30:48.343 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageChannel springCloudBusInput
+2020-09-23 14:30:48.473 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageChannel springCloudBusOutput
+2020-09-23 14:30:48.493 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageChannel errorChannel
+2020-09-23 14:30:48.581 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageHandler errorLogger
+2020-09-23 14:30:48.626 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@823b6b
+2020-09-23 14:30:48.834 INFO  [main]org.springframework.integration.endpoint.EventDrivenConsumer -Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-09-23 14:30:48.835 INFO  [main]org.springframework.integration.channel.PublishSubscribeChannel -Channel 'user-service-1.errorChannel' has 1 subscriber(s).
+2020-09-23 14:30:48.835 INFO  [main]org.springframework.integration.endpoint.EventDrivenConsumer -started bean '_org.springframework.integration.errorLogger'
+2020-09-23 14:30:48.837 INFO  [main]org.springframework.cloud.stream.binder.DefaultBinderFactory -Creating binder: rabbit
+2020-09-23 14:30:49.517 INFO  [main]org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -Fetching config from server at : http://192.168.0.102:8020/
+2020-09-23 14:30:51.860 INFO  [main]org.springframework.cloud.config.client.ConfigServicePropertySourceLocator -Located environment: name=user-service, profiles=[dev], label=master, version=fbf8b195e6d096198b1a94448f3a5043163fcc69, state=null
+2020-09-23 14:30:51.861 INFO  [main]org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration -Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/liuze0118/my-config.git/user-service-dev.yml'}]
+2020-09-23 14:30:52.038 INFO  [main]org.springframework.data.repository.config.DeferredRepositoryInitializationListener -Triggering deferred initialization of Spring Data repositories…
+2020-09-23 14:30:52.237 INFO  [main]org.springframework.data.repository.config.DeferredRepositoryInitializationListener -Spring Data repositories initialized!
+2020-09-23 14:30:52.403 INFO  [main]org.springframework.cloud.stream.binder.DefaultBinderFactory -Caching the binder: rabbit
+2020-09-23 14:30:52.403 INFO  [main]org.springframework.cloud.stream.binder.DefaultBinderFactory -Retrieving cached binder: rabbit
+2020-09-23 14:30:52.577 INFO  [main]org.springframework.amqp.rabbit.connection.CachingConnectionFactory -Attempting to connect to: [47.94.237.238:5672]
+2020-09-23 14:30:52.645 INFO  [main]org.springframework.amqp.rabbit.connection.CachingConnectionFactory -Created new connection: rabbitConnectionFactory#1ab8f93:0/SimpleConnection@1d8590c [delegate=amqp://admin@47.94.237.238:5672/, localPort= 58366]
+2020-09-23 14:30:52.709 INFO  [main]org.springframework.cloud.stream.messaging.DirectWithAttributesChannel -Channel 'user-service-1.springCloudBusOutput' has 1 subscriber(s).
+2020-09-23 14:30:52.726 INFO  [main]org.springframework.cloud.netflix.eureka.InstanceInfoFactory -Setting initial instance status as: STARTING
+2020-09-23 14:30:52.782 INFO  [main]com.netflix.discovery.DiscoveryClient -Initializing Eureka in region us-east-1
+2020-09-23 14:30:52.884 INFO  [main]com.netflix.discovery.provider.DiscoveryJerseyProvider -Using JSON encoding codec LegacyJacksonJson
+2020-09-23 14:30:52.884 INFO  [main]com.netflix.discovery.provider.DiscoveryJerseyProvider -Using JSON decoding codec LegacyJacksonJson
+2020-09-23 14:30:53.088 INFO  [main]com.netflix.discovery.provider.DiscoveryJerseyProvider -Using XML encoding codec XStreamXml
+2020-09-23 14:30:53.088 INFO  [main]com.netflix.discovery.provider.DiscoveryJerseyProvider -Using XML decoding codec XStreamXml
+2020-09-23 14:30:53.396 INFO  [main]com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -Resolving eureka endpoints via configuration
+2020-09-23 14:30:53.807 INFO  [main]com.netflix.discovery.DiscoveryClient -Disable delta property : false
+2020-09-23 14:30:53.808 INFO  [main]com.netflix.discovery.DiscoveryClient -Single vip registry refresh property : null
+2020-09-23 14:30:53.808 INFO  [main]com.netflix.discovery.DiscoveryClient -Force full registry fetch : false
+2020-09-23 14:30:53.808 INFO  [main]com.netflix.discovery.DiscoveryClient -Application is null : false
+2020-09-23 14:30:53.808 INFO  [main]com.netflix.discovery.DiscoveryClient -Registered Applications size is zero : true
+2020-09-23 14:30:53.808 INFO  [main]com.netflix.discovery.DiscoveryClient -Application version is -1: true
+2020-09-23 14:30:53.809 INFO  [main]com.netflix.discovery.DiscoveryClient -Getting all instance registry info from the eureka server
+2020-09-23 14:30:54.145 INFO  [main]com.netflix.discovery.DiscoveryClient -The response status is 200
+2020-09-23 14:30:54.148 INFO  [main]com.netflix.discovery.DiscoveryClient -Starting heartbeat executor: renew interval is: 30
+2020-09-23 14:30:54.152 INFO  [main]com.netflix.discovery.InstanceInfoReplicator -InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-09-23 14:30:54.158 INFO  [main]com.netflix.discovery.DiscoveryClient -Discovery Client initialized at timestamp 1600842654157 with initial instances count: 3
+2020-09-23 14:30:54.163 INFO  [main]org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry -Registering application USER-SERVICE with eureka with status UP
+2020-09-23 14:30:54.163 INFO  [main]com.netflix.discovery.DiscoveryClient -Saw local status change event StatusChangeEvent [timestamp=1600842654163, current=UP, previous=STARTING]
+2020-09-23 14:30:54.166 INFO  [main]org.springframework.cloud.stream.binder.DefaultBinderFactory -Retrieving cached binder: rabbit
+2020-09-23 14:30:54.167 INFO  [DiscoveryClient-InstanceInfoReplicator-0]com.netflix.discovery.DiscoveryClient -DiscoveryClient_USER-SERVICE/192.168.0.102:user-service:8081: registering service...
+2020-09-23 14:30:54.214 INFO  [DiscoveryClient-InstanceInfoReplicator-0]com.netflix.discovery.DiscoveryClient -DiscoveryClient_USER-SERVICE/192.168.0.102:user-service:8081 - registration status: 204
+2020-09-23 14:30:54.282 INFO  [main]org.springframework.cloud.stream.binder.rabbit.provisioning.RabbitExchangeQueueProvisioner -declaring queue for inbound: springCloudBus.anonymous.rku0AWZPSEGmKqRrN7-Z9A, bound to: springCloudBus
+2020-09-23 14:30:54.326 INFO  [main]org.springframework.cloud.stream.binder.BinderErrorChannel -Channel 'springCloudBus.anonymous.rku0AWZPSEGmKqRrN7-Z9A.errors' has 1 subscriber(s).
+2020-09-23 14:30:54.326 INFO  [main]org.springframework.cloud.stream.binder.BinderErrorChannel -Channel 'springCloudBus.anonymous.rku0AWZPSEGmKqRrN7-Z9A.errors' has 2 subscriber(s).
+2020-09-23 14:30:54.374 INFO  [main]org.springframework.integration.amqp.inbound.AmqpInboundChannelAdapter -started bean 'inbound.springCloudBus.anonymous.rku0AWZPSEGmKqRrN7-Z9A'
+2020-09-23 14:30:54.377 INFO  [main]org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+2020-09-23 14:30:54.417 INFO  [main]org.springframework.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path ''
+2020-09-23 14:30:54.419 INFO  [main]org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration -Updating port to 8081
+2020-09-23 14:30:54.991 INFO  [main]org.springframework.data.repository.config.DeferredRepositoryInitializationListener -Triggering deferred initialization of Spring Data repositories…
+2020-09-23 14:30:54.992 INFO  [main]org.springframework.data.repository.config.DeferredRepositoryInitializationListener -Spring Data repositories initialized!
+2020-09-23 14:30:55.053 INFO  [main]org.springframework.integration.monitor.IntegrationMBeanExporter -Registering MessageChannel springCloudBus.anonymous.rku0AWZPSEGmKqRrN7-Z9A.errors
+2020-09-23 14:30:55.416 INFO  [main]com.cloud.lz.userservice.UserServiceApplication -Started UserServiceApplication in 26.145 seconds (JVM running for 27.689)
+2020-09-23 14:35:53.813 INFO  [AsyncResolver-bootstrap-executor-0]com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -Resolving eureka endpoints via configuration

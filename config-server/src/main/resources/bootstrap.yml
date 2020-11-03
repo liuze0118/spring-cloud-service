@@ -1,0 +1,36 @@
+server:
+  port: 8020
+eureka:
+  client:
+    service-url:
+      defaultZone: http://liuze:1234@localhost:8010/eureka/
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          skipSslValidation: true
+          uri: https://github.com/liuze0118/my-config.git
+          username: liuze0118
+          password: qingsiweiwan163
+          force-pull: true
+        bootstrap: true
+  rabbitmq:
+    addresses: 47.94.237.238
+    port: 5672
+    username: admin
+    password: admin
+    template:
+      retry:
+        max-attempts: 5
+        enabled: true
+        max-interval: 300s
+        initial-interval: 1s
+        multiplier: 5
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

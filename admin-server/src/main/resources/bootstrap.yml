@@ -1,0 +1,34 @@
+server:
+  port: 8040
+spring:
+  rabbitmq:
+    addresses: 47.94.237.238
+    port: 5672
+    username: admin
+    password: admin
+  application:
+    name: zuul-gateway
+  cloud:
+    config:
+      profile: dev
+      label: master
+      discovery:
+        service-id: config-server
+        enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://liuze:1234@localhost:8010/eureka/
+    registry-fetch-interval-seconds: 30
+  instance:
+    lease-expiration-duration-in-seconds: 90
+    lease-renewal-interval-in-seconds: 30
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+

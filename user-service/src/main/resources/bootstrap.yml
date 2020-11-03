@@ -1,0 +1,67 @@
+server:
+  port: 8081
+spring:
+  rabbitmq:
+    addresses: 47.94.237.238
+    port: 5672
+    username: admin
+    password: admin
+  profiles:
+    active: dev
+  application:
+    name: user-service
+  cloud:
+    config:
+      profile: dev
+      label: master
+      discovery:
+        service-id: config-server
+        enabled: true
+  jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+  datasource:
+    druid:
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://47.94.237.238:3306/my_dev
+      type: com.alibaba.druid.pool.DruidDataSource
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      poolPreparedStatements: true
+      filters: stat,wall
+      maxPoolPreparedStatementPerConnectionSize: 20
+      useGlobalDataSourceStat: true
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+  redis:
+    host: 47.94.237.238
+    port: 6379
+    password: 123456
+    database: 1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://liuze:1234@localhost:8010/eureka/
+    registry-fetch-interval-seconds: 30
+  instance:
+    lease-expiration-duration-in-seconds: 90
+    lease-renewal-interval-in-seconds: 30
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+logging:
+  config: classpath:log4j.xml
+log:
+  path: ./log
+logstash:
+  server-addr: 47.94.237.238:5044
+
