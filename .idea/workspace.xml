@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecfe22a0-b9fc-4535-a02f-24c3295d8c53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="ecfe22a0-b9fc-4535-a02f-24c3295d8c53" name="Default Changelist" comment="2020.1 first commit">
       <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
@@ -295,14 +293,11 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/spring-cloud-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys-common/sys-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/sys-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/.gitignore" afterDir="false" />
+    </list>
+    <list id="40b51728-30b8-45ef-af1d-165f97a9c7ac" name="ignore" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -317,6 +312,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -418,6 +414,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ecfe22a0-b9fc-4535-a02f-24c3295d8c53" name="Default Changelist" comment="" />
+      <changelist id="40b51728-30b8-45ef-af1d-165f97a9c7ac" name="ignore" comment="" />
       <created>1604397632317</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -432,8 +429,17 @@
       <workItem from="1604400450854" duration="6491000" />
       <workItem from="1604459873198" duration="2320000" />
       <workItem from="1604468729025" duration="36000" />
-      <workItem from="1604468799707" duration="1362000" />
+      <workItem from="1604468799707" duration="1856000" />
+      <workItem from="1604470687934" duration="45000" />
     </task>
+    <task id="LOCAL-00001" summary="2020.1 first commit">
+      <created>1604470244540</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604470244540</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,6 +456,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2020.1 first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.1 first commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2017" y="149" key="FileChooserDialogImpl" timestamp="1604468419922">
@@ -498,9 +508,17 @@
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1604400583606" />
     <state x="1625" y="0" key="SettingsEditor/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604468765285" />
-    <state x="2206" y="434" key="VCS.EditChangelistDialog" timestamp="1604468138908">
+    <state x="2172" y="432" key="VCS.ChangelistChooser" timestamp="1604470565838">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
-    <state x="2206" y="434" key="VCS.EditChangelistDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604468138908" />
+    <state x="2172" y="432" key="VCS.ChangelistChooser/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604470565838" />
+    <state x="2206" y="434" key="VCS.EditChangelistDialog" timestamp="1604470616071">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2206" y="434" key="VCS.EditChangelistDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604470616071" />
+    <state x="1918" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604470252853">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1918" y="253" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604470252853" />
   </component>
 </project>
