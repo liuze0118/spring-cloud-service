@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spi-server
+  skip-scan:
+    com.lz.cloud.spiserver.service.jd.*
+  redis:
+    host: 47.94.237.238
+    port: 6379
+    password: 123456
+    database: 1

@@ -1,6 +1,7 @@
 ###Intellij IDEA ###
 .idea
-.idea/libraries/
+spring-cloud-service/.idea/libraries/
+*.xml
 *.iws
 *.iml
 *.ipr

@@ -12,6 +12,7 @@
         <module name="config-server" />
         <module name="admin-server" />
         <module name="order-service" />
+        <module name="spi-server" />
         <module name="eureka-server" />
         <module name="user-service" />
         <module name="sys-common" />
@@ -23,6 +24,7 @@
       <module name="eureka-server" target="1.8" />
       <module name="nacos-server" target="1.8" />
       <module name="order-service" target="1.8" />
+      <module name="spi-server" target="1.8" />
       <module name="spring-cloud-service" target="1.8" />
       <module name="sys-common" target="1.8" />
       <module name="user-service" target="1.8" />
@@ -36,6 +38,7 @@
       <module name="eureka-server" options="-parameters" />
       <module name="nacos-server" options="-parameters" />
       <module name="order-service" options="-parameters" />
+      <module name="spi-server" options="-parameters" />
       <module name="spring-cloud-service" options="-parameters" />
       <module name="sys-common" options="-parameters" />
       <module name="user-service" options="-parameters" />
