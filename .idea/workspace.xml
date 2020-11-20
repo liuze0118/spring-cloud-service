@@ -20,46 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecfe22a0-b9fc-4535-a02f-24c3295d8c53" name="Default Changelist" comment="update ignore">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpasyncclient_4_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_nio_4_4_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nacos-server/src/main/java/com/lz/cloud/nacosserver/controller/NacosServerTestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nacos-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-server/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-server/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-server/src/main/java/com/lz/cloud/spiserver/SpiServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-server/src/main/java/com/lz/cloud/spiserver/config/SpiIocConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-server/src/main/java/com/lz/cloud/spiserver/controller/AuthDataSyncController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-server/src/main/java/com/lz/cloud/spiserver/controller/SpiTestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-server/src/main/java/com/lz/cloud/spiserver/lock/RedisLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-server/src/main/java/com/lz/cloud/spiserver/service/AuthDataSyncService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-server/src/main/java/com/lz/cloud/spiserver/service/cbsp/impl/AuthDataSyncServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-server/src/main/java/com/lz/cloud/spiserver/service/jd/impl/AuthDataSyncServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-server/src/main/resources/META-INF/services/com.lz.cloud.spiserver.service.AuthDataSyncService" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spi-server/src/test/java/com/lz/cloud/spiserver/SpiServerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sys-common/src/main/java/com/cloud/lz/advisor/DistributedLockAdvisor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sys-common/src/main/java/com/cloud/lz/annotation/DistributedLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sys-common/src/main/java/com/cloud/lz/config/DistributedLockConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sys-common/src/main/java/com/cloud/lz/lock/RedisLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/spring-cloud-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spring-cloud-service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nacos-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nacos-server/src/main/java/com/lz/cloud/nacosserver/NacosServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/nacos-server/src/main/java/com/lz/cloud/nacosserver/NacosServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nacos-server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sys-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sys-common/sys-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/sys-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/advisor/DistributedTransactionAdvisor$HandSignNature.class" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/advisor/DistributedTransactionAdvisor$HandSignNature.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/advisor/DistributedTransactionAdvisor.class" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/advisor/DistributedTransactionAdvisor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/config/DistributedTransactionConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/config/DistributedTransactionConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/dcstx/DistributedTransactionManager$DistributedTransactionDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/dcstx/DistributedTransactionManager$DistributedTransactionDefinition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/dcstx/DistributedTransactionManager$DistributedTransactionStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/dcstx/DistributedTransactionManager$DistributedTransactionStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/dcstx/DistributedTransactionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/dcstx/DistributedTransactionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/cloud/lz/userservice/service/impl/LogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/cloud/lz/userservice/service/impl/LogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <list id="40b51728-30b8-45ef-af1d-165f97a9c7ac" name="ignore" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
@@ -239,7 +207,6 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_2_3_0_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_3_0_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_3_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jdbc_2_3_0_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_3_0_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_3_0_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_3_0_RELEASE.xml" afterDir="false" />
@@ -285,11 +252,9 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_rabbit_3_0_8_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_rabbit_core_3_0_8_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jdbc_2_0_0_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_3_0_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_3_0_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_3_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_relational_2_0_0_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_amqp_5_3_0_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_core_5_3_0_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_jmx_5_3_0_RELEASE.xml" afterDir="false" />
@@ -388,7 +353,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.43218392" />
-    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -408,7 +373,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.NacosServerApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
     <configuration name="SpiIocConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lz.cloud.spiserver.config.SpiIocConfig" />
       <module name="spi-server" />
@@ -531,7 +496,7 @@
       <workItem from="1604628383330" duration="5000" />
       <workItem from="1605080931318" duration="855000" />
       <workItem from="1605162390053" duration="32283000" />
-      <workItem from="1605494444844" duration="23155000" />
+      <workItem from="1605494444844" duration="35836000" />
     </task>
     <task id="LOCAL-00001" summary="2020.1 first commit">
       <created>1604470244540</created>
@@ -547,11 +512,28 @@
       <option name="project" value="LOCAL" />
       <updated>1604470883932</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update ignore">
+      <created>1605694191810</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605694191810</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -591,71 +573,71 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="66" key="#xdebugger.evaluate/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605261478820" />
-    <state width="427" height="466" key="DebuggerActiveHint" timestamp="1605168014819">
+    <state width="427" height="466" key="DebuggerActiveHint" timestamp="1605750707174">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="427" height="466" key="DebuggerActiveHint/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605168014819" />
-    <state x="2017" y="149" key="FileChooserDialogImpl" timestamp="1604468419922">
-      <screen x="1366" y="0" width="1920" height="1040" />
+    <state width="427" height="466" key="DebuggerActiveHint/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605750707174" />
+    <state x="463" y="104" key="FileChooserDialogImpl" timestamp="1605751558153">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="104" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1604400565878" />
+    <state x="463" y="104" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605751558153" />
     <state x="2017" y="149" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604468419922" />
-    <state width="1203" height="236" key="GridCell.Tab.0.bottom" timestamp="1605693334989">
+    <state width="1017" height="325" key="GridCell.Tab.0.bottom" timestamp="1605862239731">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1203" height="236" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605693334989" />
+    <state width="1017" height="325" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605862239731" />
     <state width="1720" height="390" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776537" />
-    <state width="1203" height="236" key="GridCell.Tab.0.center" timestamp="1605693334989">
+    <state width="1017" height="325" key="GridCell.Tab.0.center" timestamp="1605862239730">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1203" height="236" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605693334989" />
+    <state width="1017" height="325" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605862239730" />
     <state width="1720" height="390" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776537" />
-    <state width="1203" height="236" key="GridCell.Tab.0.left" timestamp="1605693334989">
+    <state width="1017" height="325" key="GridCell.Tab.0.left" timestamp="1605862239730">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1203" height="236" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605693334989" />
+    <state width="1017" height="325" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605862239730" />
     <state width="1720" height="390" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776537" />
-    <state width="1203" height="236" key="GridCell.Tab.0.right" timestamp="1605693334989">
+    <state width="1017" height="325" key="GridCell.Tab.0.right" timestamp="1605862239730">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1203" height="236" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605693334989" />
+    <state width="1017" height="325" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605862239730" />
     <state width="1720" height="390" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776537" />
-    <state width="1203" height="236" key="GridCell.Tab.1.bottom" timestamp="1605693334990">
+    <state width="1017" height="325" key="GridCell.Tab.1.bottom" timestamp="1605862239731">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1203" height="236" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605693334990" />
+    <state width="1017" height="325" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605862239731" />
     <state width="1720" height="390" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776538" />
-    <state width="1203" height="236" key="GridCell.Tab.1.center" timestamp="1605693334990">
+    <state width="1017" height="325" key="GridCell.Tab.1.center" timestamp="1605862239731">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1203" height="236" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605693334990" />
+    <state width="1017" height="325" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605862239731" />
     <state width="1720" height="390" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776537" />
-    <state width="1203" height="236" key="GridCell.Tab.1.left" timestamp="1605693334990">
+    <state width="1017" height="325" key="GridCell.Tab.1.left" timestamp="1605862239731">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1203" height="236" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605693334990" />
+    <state width="1017" height="325" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605862239731" />
     <state width="1720" height="390" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776537" />
-    <state width="1203" height="236" key="GridCell.Tab.1.right" timestamp="1605693334990">
+    <state width="1017" height="325" key="GridCell.Tab.1.right" timestamp="1605862239731">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1203" height="236" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605693334990" />
+    <state width="1017" height="325" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605862239731" />
     <state width="1720" height="390" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776538" />
-    <state width="1099" height="267" key="GridCell.Tab.2.bottom" timestamp="1605262286380">
+    <state width="1160" height="339" key="GridCell.Tab.2.bottom" timestamp="1605841595491">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1099" height="267" key="GridCell.Tab.2.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605262286380" />
-    <state width="1099" height="267" key="GridCell.Tab.2.center" timestamp="1605262286380">
+    <state width="1160" height="339" key="GridCell.Tab.2.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605841595491" />
+    <state width="1160" height="339" key="GridCell.Tab.2.center" timestamp="1605841595491">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1099" height="267" key="GridCell.Tab.2.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605262286380" />
-    <state width="1099" height="267" key="GridCell.Tab.2.left" timestamp="1605262286380">
+    <state width="1160" height="339" key="GridCell.Tab.2.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605841595491" />
+    <state width="1160" height="339" key="GridCell.Tab.2.left" timestamp="1605841595491">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1099" height="267" key="GridCell.Tab.2.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605262286380" />
-    <state width="1099" height="267" key="GridCell.Tab.2.right" timestamp="1605262286380">
+    <state width="1160" height="339" key="GridCell.Tab.2.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605841595491" />
+    <state width="1160" height="339" key="GridCell.Tab.2.right" timestamp="1605841595491">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1099" height="267" key="GridCell.Tab.2.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605262286380" />
+    <state width="1160" height="339" key="GridCell.Tab.2.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605841595491" />
     <state x="263" y="98" key="IDE.errors.dialog" timestamp="1605497671317">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -664,10 +646,10 @@
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="1944" y="221" key="RollbackChangesDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604469785694" />
-    <state x="226" y="14" key="SettingsEditor" timestamp="1605666784184">
+    <state x="226" y="14" key="SettingsEditor" timestamp="1605841562346">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="226" y="14" key="SettingsEditor/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605666784184" />
+    <state x="226" y="14" key="SettingsEditor/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605841562346" />
     <state x="1625" y="0" key="SettingsEditor/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604468765285" />
     <state x="2172" y="432" key="VCS.ChangelistChooser" timestamp="1604470944335">
       <screen x="1366" y="0" width="1920" height="1040" />
@@ -677,21 +659,30 @@
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="2206" y="434" key="VCS.EditChangelistDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604470616071" />
-    <state x="1918" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604470888838">
-      <screen x="1366" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1918" y="253" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604470888838" />
-    <state x="385" y="0" width="596" height="728" key="find.popup" timestamp="1605691654750">
+    <state x="393" y="177" key="Vcs.Push.Dialog.v2" timestamp="1605694194667">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="385" y="0" width="596" height="728" key="find.popup/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605691654750" />
+    <state x="393" y="177" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605694194667" />
+    <state x="1918" y="253" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604470888838" />
+    <state x="672" y="0" width="596" height="728" key="find.popup" timestamp="1605751859491">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="672" y="0" width="596" height="728" key="find.popup/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605751859491" />
     <state x="87" y="0" key="new project wizard" timestamp="1605578006007">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="87" y="0" key="new project wizard/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605578006007" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605251238297">
+    <state x="486" y="243" width="618" height="434" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1605841560608">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605251238297" />
+    <state x="486" y="243" width="618" height="434" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605841560608" />
+    <state x="762" y="222" key="scopes" timestamp="1605751849319">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="762" y="222" key="scopes/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605751849319" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605855035417">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605855035417" />
   </component>
 </project>

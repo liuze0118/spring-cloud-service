@@ -65,3 +65,19 @@ log:
 logstash:
   server-addr: 47.94.237.238:5044
 
+seata:
+  enabled: true
+  application-id: applicationName
+  tx-service-group: my_test_tx_group
+  enable-auto-data-source-proxy: true
+  data-source-proxy-mode: AT
+  use-jdk-proxy: false
+  excludes-for-auto-proxying: firstClassNameForExclude,secondClassNameForExclude
+  registry:
+    type: eureka
+    load-balance: RandomLoadBalance
+    load-balance-virtual-nodes: 10
+    eureka:
+      service-url: http://liuze:1234@localhost:8010/eureka/
+      weight: 1
+

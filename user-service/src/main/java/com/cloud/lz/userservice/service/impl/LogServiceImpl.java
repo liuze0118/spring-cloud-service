@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class LogServiceImpl implements LogService {
 
-    @Scheduled(fixedRateString = "5000",initialDelay = 1000)
+//    @Scheduled(fixedRateString = "5000",initialDelay = 1000)
     public void logstashTask(){
         System.out.println("测试logstash=====");
         log.info("测试logstash" + System.currentTimeMillis());
