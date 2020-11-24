@@ -10,6 +10,7 @@ spring:
     active: dev
   application:
     name: user-service
+    instance-id: user-instance
   cloud:
     config:
       profile: dev
@@ -47,9 +48,10 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://liuze:1234@localhost:8010/eureka/
+      defaultZone:  http://liuze:1234@localhost:8010/eureka/
     registry-fetch-interval-seconds: 30
   instance:
+    instance-id:  ${spring.application.name}:${spring.application.instance_id:${random.value}}
     lease-expiration-duration-in-seconds: 90
     lease-renewal-interval-in-seconds: 30
 
@@ -65,19 +67,5 @@ log:
 logstash:
   server-addr: 47.94.237.238:5044
 
-seata:
-  enabled: true
-  application-id: applicationName
-  tx-service-group: my_test_tx_group
-  enable-auto-data-source-proxy: true
-  data-source-proxy-mode: AT
-  use-jdk-proxy: false
-  excludes-for-auto-proxying: firstClassNameForExclude,secondClassNameForExclude
-  registry:
-    type: eureka
-    load-balance: RandomLoadBalance
-    load-balance-virtual-nodes: 10
-    eureka:
-      service-url: http://liuze:1234@localhost:8010/eureka/
-      weight: 1
+
 
