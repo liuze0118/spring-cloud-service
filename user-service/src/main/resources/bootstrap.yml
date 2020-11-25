@@ -41,10 +41,23 @@ spring:
       useGlobalDataSourceStat: true
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
   redis:
-    host: 47.94.237.238
-    port: 6379
-    password: 123456
-    database: 1
+    cluster:
+      nodes:
+        - 47.94.237.238:7001
+        - 47.94.237.238:7002
+        - 47.94.237.238:7003
+        - 47.94.237.238:7004
+        - 47.94.237.238:7005
+        - 47.94.237.238:7006
+      max-redirects: 3
+    jedis:
+      pool:
+        max-active: 1024
+        max-idle: 8
+        max-wait: -1
+        min-idle: 2
+    timeout: 3000
+
 eureka:
   client:
     service-url:

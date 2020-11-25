@@ -8,9 +8,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Scope;
 import org.springframework.core.env.Environment;
+import org.springframework.data.redis.connection.RedisClusterNode;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Set;
 
 @RestController
 @RequestMapping("/user")
@@ -29,6 +32,26 @@ public class UserController {
 
     @Autowired
     private LogService logService;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
+
+    @RequestMapping("/redis/{key}")
+    public String testRedisCluster(@PathVariable String key){
+        Set keys = redisTemplate.opsForCluster().keys(new RedisClusterNode("47.94.237.238", 7001), "*");
+        keys.parallelStream().forEach(k->{
+            System.out.println("7001---" + k);
+        });
+        String str = null;
+        if(!redisTemplate.opsForValue().setIfAbsent(key,(Math.random()*100)+1)){
+            Object o=redisTemplate.opsForValue().get(key);
+            str = o.toString();
+        }else{
+            redisTemplate.opsForValue().set(key,(Math.random()*100)+1);
+            str = redisTemplate.opsForValue().get(key).toString();
+        }
+        return str;
+    }
 
     @RequestMapping("get/{id}")
     @ResponseBody
