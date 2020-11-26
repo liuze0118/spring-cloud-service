@@ -1,5 +1,5 @@
 <Configuration name="logback-dev-config" debug="true" scan="true" scanPeriod="60 seconds">
-    <property name="log_pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread]%logger -%msg%n"/>
+    <property name="log_pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%X{X-B3-TraceId:-},%X{X-B3-SpanId:-}] %-5level [%thread]%logger -%msg%n"/>
     <springProperty scope="context" name="logstash.server-addr" source="logstash.server-addr"/>
     <springProperty scope="context" name="log.path" source="log.path"/>
     <springProperty scope="context" name="log.name" source="spring.application.name"/>
@@ -54,18 +54,19 @@
     <appender name="stashLog" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
         <destination>${logstash.server-addr}</destination>
         <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
-            <jsonFactoryDecorator class="net.logstash.logback.decorate.CharacterEscapesJsonFactoryDecorator">
-                <escape>
-                    <targetCharacterCode>10</targetCharacterCode>
-                    <escapeSequence>\u2028</escapeSequence>
-                </escape>
-            </jsonFactoryDecorator>Di
+<!--            <jsonFactoryDecorator class="net.logstash.logback.decorate.CharacterEscapesJsonFactoryDecorator">-->
+<!--                <escape>-->
+<!--                    <targetCharacterCode>10</targetCharacterCode>-->
+<!--                    <escapeSequence>\u2028</escapeSequence>-->
+<!--                </escape>-->
+<!--            </jsonFactoryDecorator>-->
             <providers>
                 <pattern>
                     <pattern>
                         {
                         "serviceName":"${log.name}",
-                        "timestamp":"%date{ISO8601}",
+                        "spanId":"%X{X-B3-SpanId:-}",
+                        "traceId":"%X{X-B3-TraceId:-}",
                         "message":"%msg%n"
                         }
                     </pattern>
@@ -75,12 +76,12 @@
         <keepAliveDuration>5 minutes</keepAliveDuration>
     </appender>
     <Logger name="com.cloud.lz.userservice.controller" level="info" additivity="false">
-<!--        <appender-ref ref="Console"/>-->
+        <appender-ref ref="Console"/>
 <!--        <appender-ref ref="controllerLogFile"/>-->
         <appender-ref ref="stashLog"/>
     </Logger>
     <Logger name="com.cloud.lz.userservice.service" level="info" additivity="false">
-<!--        <appender-ref ref="Console"/>-->
+        <appender-ref ref="Console"/>
 <!--        <appender-ref ref="serviceLogFile"/>-->
         <appender-ref ref="stashLog"/>
     </Logger>

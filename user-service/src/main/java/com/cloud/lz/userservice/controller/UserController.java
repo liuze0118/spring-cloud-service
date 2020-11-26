@@ -3,6 +3,7 @@ package com.cloud.lz.userservice.controller;
 import com.cloud.lz.userservice.pojo.UserPojo;
 import com.cloud.lz.userservice.service.LogService;
 import com.cloud.lz.userservice.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -17,6 +18,7 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/user")
+@Slf4j
 //@RefreshScope
 public class UserController {
 
@@ -52,6 +54,13 @@ public class UserController {
         }
         return str;
     }
+
+    @RequestMapping("/sleuth/{str}")
+    public String testSleuthLog(@PathVariable("str") String str){
+        log.info("sleuth-log---------->" + str);
+        return "Sleuth-test";
+    }
+
 
     @RequestMapping("get/{id}")
     @ResponseBody
