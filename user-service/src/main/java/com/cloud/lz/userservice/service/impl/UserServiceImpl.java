@@ -34,6 +34,8 @@ public class UserServiceImpl implements UserService {
     @Value("${dev.ood:2}")
     private String ood;
 
+    @Autowired
+    private UserService userService;
 
     @Override
     public UserPojo getUserById(int id) {

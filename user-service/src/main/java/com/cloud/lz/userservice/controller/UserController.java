@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/user")
@@ -45,11 +46,11 @@ public class UserController {
             System.out.println("7001---" + k);
         });
         String str = null;
-        if(!redisTemplate.opsForValue().setIfAbsent(key,(Math.random()*100)+1)){
+        if(!redisTemplate.opsForValue().setIfAbsent(key, UUID.randomUUID().toString().substring(0,4))){
             Object o=redisTemplate.opsForValue().get(key);
             str = o.toString();
         }else{
-            redisTemplate.opsForValue().set(key,(Math.random()*100)+1);
+            redisTemplate.opsForValue().set(key,UUID.randomUUID().toString().substring(0,4));
             str = redisTemplate.opsForValue().get(key).toString();
         }
         return str;
