@@ -57,7 +57,17 @@ spring:
         max-wait: -1
         min-idle: 2
     timeout: 3000
-
+    password: 123456
+feign:
+  client:
+    config:
+      feignName:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: full
+  hystrix:
+    enabled: false
+  re
 eureka:
   client:
     service-url:

@@ -1,10 +1,13 @@
 package com.cloud.lz.orderservice.controller;
 
+import com.cloud.lz.feign.service.UserServiceFeign;
 import com.cloud.lz.orderservice.pojo.Order;
 import com.cloud.lz.orderservice.service.OrderService;
+import com.cloud.lz.vo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
@@ -12,6 +15,8 @@ import java.util.List;
 public class OrderController {
     @Autowired
     private OrderService orderService;
+
+
 
     @GetMapping("/get/{id}")
     @ResponseBody

@@ -45,10 +45,18 @@ spring:
     port: 6379
     password: 123456
     database: 1
+
+feign:
+  client:
+    config:
+      feignName:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: full
 eureka:
   client:
     service-url:
-      defaultZone:  http://liuze:1234@localhost:8020/eureka/
+      defaultZone:  http://liuze:1234@localhost:8010/eureka/
     registry-fetch-interval-seconds: 30
   instance:
     instance-id:  ${spring.application.name}:${spring.application.instance_id:${random.value}}

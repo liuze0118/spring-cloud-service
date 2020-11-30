@@ -39,11 +39,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserPojo getUserById(int id) {
-        System.out.println("ooc =" + ooc);
-        System.out.println("ood =" + ood);
+//        System.out.println("ooc =" + ooc);
+//        System.out.println("ood =" + ood);
+//        one.setName(ooc);
+//        one.setPassword(ood);
         UserPojo one = userDao.getOne(id);
-        one.setName(ooc);
-        one.setPassword(ood);
         return one;
     }
 

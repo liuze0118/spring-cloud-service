@@ -69,7 +69,6 @@ public class UserController {
         UserPojo userById = userService.getUserById(id);
 //        userById.setName(oos);
 //        userById.setPassword(ood);
-        logService.logstashTask();
         return userById;
     }
 
