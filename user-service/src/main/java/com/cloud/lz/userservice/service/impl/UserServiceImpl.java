@@ -77,14 +77,16 @@ public class UserServiceImpl implements UserService {
         return userDao.queryAllByIdIsOrNameLike(userPojo.getId(),userPojo.getName());
     }
 
-    public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchFieldException {
-        UserPojo userPojo = new UserPojo();
-        userPojo.setId(1);
-        Class<?> clazz  = userPojo.getClass();
-        Field id = clazz.getDeclaredField("id");
-        id.setAccessible(true);
-        String  o = String.valueOf(id.get(userPojo));
-        System.out.println(o);
-    }
+//    public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchFieldException {
+//        UserPojo userPojo = new UserPojo();
+//        userPojo.setId(1);
+//        Class<?> clazz  = userPojo.getClass();
+//        Field id = clazz.getDeclaredField("id");
+//        id.setAccessible(true);
+//        String  o = String.valueOf(id.get(userPojo));
+//        System.out.println(o);
+//        String str = "test_11";
+//        System.out.println(str.contains("test_"));
+//    }
 
 }

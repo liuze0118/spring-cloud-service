@@ -2,6 +2,7 @@ package com.cloud.lz.config;
 
 import com.cloud.lz.advisor.DistributedTransactionAdvisor;
 import com.cloud.lz.dcstx.DistributedTransactionManager;
+import com.cloud.lz.lock.RedisLock;
 import com.cloud.lz.utils.RedisUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
@@ -11,7 +12,7 @@ import org.springframework.beans.factory.support.BeanDefinitionRegistryPostProce
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.transaction.PlatformTransactionManager;
 
@@ -20,6 +21,11 @@ import java.util.concurrent.*;
 @Configuration
 @Slf4j
 public class DistributedTransactionConfig implements BeanDefinitionRegistryPostProcessor {
+
+    @Bean
+    public RedisLock redisLock(RedisTemplate redisTemplate){
+        return new RedisLock(redisTemplate);
+    }
 
     @Bean
     public RedisUtil redisUtil(){

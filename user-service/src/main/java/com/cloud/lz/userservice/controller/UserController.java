@@ -1,18 +1,17 @@
 package com.cloud.lz.userservice.controller;
 
+import com.cloud.lz.lock.RedisLock;
 import com.cloud.lz.userservice.pojo.UserPojo;
 import com.cloud.lz.userservice.service.LogService;
 import com.cloud.lz.userservice.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.context.annotation.Scope;
 import org.springframework.core.env.Environment;
 import org.springframework.data.redis.connection.RedisClusterNode;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.Set;
 import java.util.UUID;
@@ -25,6 +24,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Resource
+    private RedisLock redisLock;
 //    @Value("${dev.ooc:1}")
 //    private String oos;
 //    @Value("${dev.ood:2}")
@@ -38,6 +40,43 @@ public class UserController {
 
     @Autowired
     private RedisTemplate redisTemplate;
+
+    @RequestMapping("/redis/lock/{name}")
+    public String testRedisLock(@PathVariable String name) throws InterruptedException {
+        if(redisLock.tryLock(name,60)){
+//            for (int i = 0; i < 10; i++) {
+//                try {
+//                    Thread.sleep(i*1000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+            redisLock.unlock(name);
+        }
+//        CountDownLatch countDownLatch = new CountDownLatch(10);
+//        for (int j = 0; j < 10; j++) {
+//            final String str = "redis_lock_" + name +"_"+ j;
+//            new Thread(()->{
+//                try {
+//                    countDownLatch.await();
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//                if(redisLock.tryLock(str,60*1000)){
+//                    for (int i = 0; i < 10; i++) {
+//                        try {
+//                            Thread.sleep(i*1000);
+//                        } catch (InterruptedException e) {
+//                            e.printStackTrace();
+//                        }
+//                    }
+//                    redisLock.unlock(str);
+//                }
+//            });
+//            countDownLatch.countDown();
+//        }
+        return null;
+    }
 
     @RequestMapping("/redis/{key}")
     public String testRedisCluster(@PathVariable String key){

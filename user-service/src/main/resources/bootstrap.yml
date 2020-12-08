@@ -67,7 +67,6 @@ feign:
         loggerLevel: full
   hystrix:
     enabled: false
-  re
 eureka:
   client:
     service-url:
