@@ -1,5 +1,7 @@
 ###Intellij IDEA ###
 .idea
+spring-cloud-service/.idea
+*.xml
 spring-cloud-service/.idea/libraries/
 *.xml
 *.iws

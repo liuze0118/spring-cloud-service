@@ -80,6 +80,8 @@ storage:
   type: minio
   minio:
     bucket: test
+lz:
+  type: auto_config
 management:
   endpoints:
     web:

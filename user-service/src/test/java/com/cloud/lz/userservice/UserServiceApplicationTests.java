@@ -1,10 +1,8 @@
 package com.cloud.lz.userservice;
 
-import com.cloud.lz.config.Minio;
 import com.cloud.lz.config.StorageConfig;
 import com.cloud.lz.lock.RedisLock;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
@@ -16,8 +14,6 @@ class UserServiceApplicationTests {
 
     @Resource
     private StorageConfig.StorageProperties storageProperties;
-    @Resource
-    private Minio minio;
 
     @Test
     void contextLoads() {
@@ -25,7 +21,7 @@ class UserServiceApplicationTests {
 
     @Test
      void testProperties(){
-        System.out.println(minio.getBucket());
+        System.out.println(storageProperties.getMinioPropertie().getBucket());
     }
 
     @Test

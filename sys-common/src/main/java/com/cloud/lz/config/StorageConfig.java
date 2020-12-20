@@ -35,11 +35,5 @@ public class StorageConfig {
         storageProperties.setMinioPropertie(minioProperties);
         return storageProperties;
     }
-    @ConfigurationProperties("storage.minio")
-    @Bean
-    public Minio minio(){
-        return new Minio();
-    }
-
 
 }

@@ -11,6 +11,6 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@Import({DistributedTransactionConfig.class, StorageConfig.class})
+@Import({DistributedTransactionConfig.class})
 public @interface EnableDistributedTransaction {
 }
