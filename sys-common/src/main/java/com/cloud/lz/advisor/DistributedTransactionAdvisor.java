@@ -22,7 +22,7 @@ public class DistributedTransactionAdvisor {
     private AmqpTemplate amqpTemplate;
     @Resource
     private DistributedTransactionManager manager;
-    @Autowired
+    @Autowired(required = false)
     private ApplicationContext applicationContext;
 
 

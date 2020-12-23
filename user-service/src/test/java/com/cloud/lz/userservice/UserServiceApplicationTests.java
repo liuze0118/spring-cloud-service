@@ -2,18 +2,24 @@ package com.cloud.lz.userservice;
 
 import com.cloud.lz.config.StorageConfig;
 import com.cloud.lz.lock.RedisLock;
+import com.cloud.lz.vo.UserVo;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @SpringBootTest
 class UserServiceApplicationTests {
-    @Resource
-    private RedisLock redisLock;
+    @Autowired(required = false)
+    private List<RedisLock> redisLocks;
 
     @Resource
     private StorageConfig.StorageProperties storageProperties;
+
+    @Autowired
+    private UserVo userVo;
 
     @Test
     void contextLoads() {
