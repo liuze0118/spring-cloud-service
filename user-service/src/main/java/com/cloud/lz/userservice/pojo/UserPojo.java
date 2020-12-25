@@ -26,4 +26,14 @@ public class UserPojo implements Serializable {
     @Column(name="phone_number")
     private String phoneNumber;
 
+    @Override
+    public String toString() {
+        return "UserPojo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", nickName='" + nickName + '\'' +
+                ", password='" + password + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                '}';
+    }
 }

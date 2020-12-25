@@ -1,5 +1,9 @@
 package com.cloud.lz.userservice.config;
 
+import com.alibaba.csp.sentinel.annotation.aspectj.SentinelResourceAspect;
+import com.alibaba.csp.sentinel.slots.block.RuleConstant;
+import com.alibaba.csp.sentinel.slots.block.flow.FlowRule;
+import com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManager;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -10,10 +14,18 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 
 import javax.sql.DataSource;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 @Configuration
 public class TransitionConfig {
+
+    @Bean
+    public SentinelResourceAspect sentinelResourceAspect() {
+
+        return new SentinelResourceAspect();
+    }
 
 
     @Bean

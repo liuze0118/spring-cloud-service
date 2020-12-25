@@ -19,14 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecfe22a0-b9fc-4535-a02f-24c3295d8c53" name="Default Changelist" comment="测试properties嵌套注入">
+    <list default="true" id="ecfe22a0-b9fc-4535-a02f-24c3295d8c53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/sys-common/src/main/java/com/cloud/lz/advisor/SentinelAdvisor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sys-common/src/main/java/com/cloud/lz/config/SentinelConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/flowrule.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys-common/src/main/java/com/cloud/lz/advisor/DistributedTransactionAdvisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/src/main/java/com/cloud/lz/advisor/DistributedTransactionAdvisor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys-common/src/main/java/com/cloud/lz/config/LzAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/src/main/java/com/cloud/lz/config/LzAutoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys-common/src/main/java/com/cloud/lz/config/StorageConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/src/main/java/com/cloud/lz/config/StorageConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/advisor/DistributedTransactionAdvisor.class" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/advisor/DistributedTransactionAdvisor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/config/DistributedTransactionConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/config/DistributedTransactionConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/dcstx/DistributedTransactionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/target/classes/com/cloud/lz/dcstx/DistributedTransactionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sys-common/sys-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sys-common/sys-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/cloud/lz/userservice/config/TransitionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/cloud/lz/userservice/config/TransitionConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/cloud/lz/userservice/pojo/UserPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/cloud/lz/userservice/pojo/UserPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/cloud/lz/userservice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/cloud/lz/userservice/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/cloud/lz/userservice/UserServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/com/cloud/lz/userservice/UserServiceApplicationTests.java" afterDir="false" />
     </list>
     <list id="40b51728-30b8-45ef-af1d-165f97a9c7ac" name="ignore" comment="" />
@@ -45,6 +49,7 @@
         <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -92,7 +97,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.43218392" />
-    <property name="settings.editor.selected.configurable" value="spring.boot" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -121,33 +126,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceApplicationTests.testProperties">
-    <configuration name="SpiIocConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lz.cloud.spiserver.config.SpiIocConfig" />
-      <module name="spi-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lz.cloud.spiserver.config.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cloud.lz.userservice.controller.UserController" />
-      <module name="user-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cloud.lz.userservice.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserServiceApplicationTests.testSentinel">
     <configuration name="UserServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cloud.lz.userservice.service.impl.UserServiceImpl" />
       <module name="user-service" />
@@ -188,6 +167,22 @@
       <option name="PACKAGE_NAME" value="com.cloud.lz.userservice" />
       <option name="MAIN_CLASS_NAME" value="com.cloud.lz.userservice.UserServiceApplicationTests" />
       <option name="METHOD_NAME" value="testRedisLock" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplicationTests.testSentinel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cloud.lz.userservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cloud.lz.userservice" />
+      <option name="MAIN_CLASS_NAME" value="com.cloud.lz.userservice.UserServiceApplicationTests" />
+      <option name="METHOD_NAME" value="testSentinel" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -249,9 +244,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Unittests in test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/user-service/src/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/user-service/src/test&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Application.SpiIocConfig" />
-      <item itemvalue="Application.UserController" />
       <item itemvalue="Application.UserServiceImpl" />
       <item itemvalue="JUnit.UserServiceApplicationTests.testRedisLock" />
       <item itemvalue="JUnit.UserServiceApplicationTests.testProperties" />
@@ -263,14 +271,16 @@
       <item itemvalue="Spring Boot.OrderServiceApplication" />
       <item itemvalue="Spring Boot.SpiServerApplication" />
       <item itemvalue="Spring Boot.ZuulGatewayApplication" />
+      <item itemvalue="Python tests.Unittests in test" />
+      <item itemvalue="JUnit.UserServiceApplicationTests.testSentinel" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceApplicationTests.testSentinel" />
+        <item itemvalue="Python tests.Unittests in test" />
         <item itemvalue="JUnit.UserServiceApplicationTests.testProperties" />
         <item itemvalue="JUnit.UserServiceApplicationTests.testRedisLock" />
         <item itemvalue="Application.UserServiceImpl" />
-        <item itemvalue="Application.UserController" />
-        <item itemvalue="Application.SpiIocConfig" />
       </list>
     </recent_temporary>
   </component>
@@ -314,7 +324,7 @@
       <workItem from="1607653631894" duration="12340000" />
       <workItem from="1607909727529" duration="978000" />
       <workItem from="1608515297516" duration="15646000" />
-      <workItem from="1608703875680" duration="2614000" />
+      <workItem from="1608703875680" duration="19255000" />
     </task>
     <task id="LOCAL-00001" summary="2020.1 first commit">
       <created>1604470244540</created>
@@ -393,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607678659960</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="测试properties嵌套注入">
+      <created>1608706534768</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608706534768</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,6 +452,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="测试properties嵌套注入" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="379" y="0" key="#Unittests_in_test" timestamp="1608881838911">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="0" key="#Unittests_in_test/0.0.1366.728@0.0.1366.728" timestamp="1608881838911" />
     <state x="299" y="164" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605165177772">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -443,11 +464,15 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="120" y="159" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605166569524" />
-    <state x="488" y="69" width="571" height="589" key="#com.intellij.ide.util.MemberChooser" timestamp="1607656179354">
+    <state x="488" y="69" width="571" height="589" key="#com.intellij.ide.util.MemberChooser" timestamp="1608883250274">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="69" width="571" height="589" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606721184696" />
-    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1607656179354" />
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1608883250274" />
+    <state x="459" y="231" width="447" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1608805333464">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="459" y="231" width="447" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1608805333464" />
     <state x="224" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607420222841">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -457,75 +482,75 @@
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605258395301" />
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1608706497262" />
-    <state x="175" y="77" width="798" height="596" key="#xdebugger.evaluate" timestamp="1607657772465">
+    <state x="642" y="140" width="798" height="596" key="#xdebugger.evaluate" timestamp="1608890644057">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="202" y="132" width="798" height="596" key="#xdebugger.evaluate/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606470716053" />
-    <state x="175" y="77" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1607657772465" />
-    <state x="218" y="0" key="CommitChangelistDialog2" timestamp="1608706485786">
+    <state x="642" y="140" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1608890644057" />
+    <state x="218" y="0" key="CommitChangelistDialog2" timestamp="1608706529527">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="218" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606728783076" />
-    <state x="218" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1608706485786" />
-    <state width="528" height="466" key="DebuggerActiveHint" timestamp="1608542631127">
+    <state x="218" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1608706529527" />
+    <state width="1038" height="466" key="DebuggerActiveHint" timestamp="1608888979519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="528" height="466" key="DebuggerActiveHint/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606119572458" />
-    <state width="528" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1608542631127" />
-    <state x="463" y="104" key="FileChooserDialogImpl" timestamp="1608600982860">
+    <state width="1038" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1608888979519" />
+    <state x="463" y="104" key="FileChooserDialogImpl" timestamp="1608799442880">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="104" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606789516516" />
     <state x="2017" y="149" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604468419922" />
-    <state x="463" y="104" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608600982860" />
-    <state width="1323" height="214" key="GridCell.Tab.0.bottom" timestamp="1608706445708">
+    <state x="463" y="104" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608799442880" />
+    <state width="1323" height="275" key="GridCell.Tab.0.bottom" timestamp="1608890959536">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1046" height="202" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606983850794" />
     <state width="1720" height="390" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776537" />
-    <state width="1323" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608706445708" />
-    <state width="1323" height="214" key="GridCell.Tab.0.center" timestamp="1608706445707">
+    <state width="1323" height="275" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608890959536" />
+    <state width="1323" height="275" key="GridCell.Tab.0.center" timestamp="1608890959536">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1046" height="202" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606983850794" />
     <state width="1720" height="390" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776537" />
-    <state width="1323" height="214" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608706445707" />
-    <state width="1323" height="214" key="GridCell.Tab.0.left" timestamp="1608706445707">
+    <state width="1323" height="275" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608890959536" />
+    <state width="1323" height="275" key="GridCell.Tab.0.left" timestamp="1608890959536">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1046" height="202" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606983850794" />
     <state width="1720" height="390" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776537" />
-    <state width="1323" height="214" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608706445707" />
-    <state width="1323" height="214" key="GridCell.Tab.0.right" timestamp="1608706445708">
+    <state width="1323" height="275" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608890959536" />
+    <state width="1323" height="275" key="GridCell.Tab.0.right" timestamp="1608890959536">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1046" height="202" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606983850794" />
     <state width="1720" height="390" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776537" />
-    <state width="1323" height="214" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608706445708" />
-    <state width="1323" height="214" key="GridCell.Tab.1.bottom" timestamp="1608706430025">
+    <state width="1323" height="275" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608890959536" />
+    <state width="1323" height="275" key="GridCell.Tab.1.bottom" timestamp="1608890959236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1046" height="202" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606983850794" />
     <state width="1720" height="390" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776538" />
-    <state width="1323" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608706430025" />
-    <state width="1323" height="214" key="GridCell.Tab.1.center" timestamp="1608706430025">
+    <state width="1323" height="275" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608890959236" />
+    <state width="1323" height="275" key="GridCell.Tab.1.center" timestamp="1608890959236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1046" height="202" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606983850794" />
     <state width="1720" height="390" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776537" />
-    <state width="1323" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1608706430025" />
-    <state width="1323" height="214" key="GridCell.Tab.1.left" timestamp="1608706430025">
+    <state width="1323" height="275" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1608890959236" />
+    <state width="1323" height="275" key="GridCell.Tab.1.left" timestamp="1608890959236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1046" height="202" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606983850794" />
     <state width="1720" height="390" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776537" />
-    <state width="1323" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1608706430025" />
-    <state width="1323" height="214" key="GridCell.Tab.1.right" timestamp="1608706430025">
+    <state width="1323" height="275" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1608890959236" />
+    <state width="1323" height="275" key="GridCell.Tab.1.right" timestamp="1608890959236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1046" height="202" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606983850794" />
     <state width="1720" height="390" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604459776538" />
-    <state width="1323" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1608706430025" />
+    <state width="1323" height="275" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1608890959236" />
     <state width="1070" height="317" key="GridCell.Tab.2.bottom" timestamp="1607316982429">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -546,11 +571,11 @@
     </state>
     <state width="1046" height="202" key="GridCell.Tab.2.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606983850795" />
     <state width="1070" height="317" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1607316982429" />
-    <state x="263" y="98" key="IDE.errors.dialog" timestamp="1607306562279">
+    <state x="263" y="98" key="IDE.errors.dialog" timestamp="1608890555460">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="98" key="IDE.errors.dialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606096104284" />
-    <state x="263" y="98" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1607306562279" />
+    <state x="263" y="98" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1608890555460" />
     <state x="129" y="55" key="MergeDialog" timestamp="1608515358487">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -559,12 +584,12 @@
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="1944" y="221" key="RollbackChangesDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604469785694" />
-    <state x="226" y="14" key="SettingsEditor" timestamp="1608705755047">
+    <state x="226" y="14" key="SettingsEditor" timestamp="1608799443720">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="226" y="14" key="SettingsEditor/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1607050284671" />
     <state x="1625" y="0" key="SettingsEditor/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604468765285" />
-    <state x="226" y="14" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608705755047" />
+    <state x="226" y="14" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608799443720" />
     <state x="573" y="302" key="VCS.ChangelistChooser" timestamp="1606472559384">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -574,12 +599,12 @@
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="2206" y="434" key="VCS.EditChangelistDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604470616071" />
-    <state x="393" y="177" key="Vcs.Push.Dialog.v2" timestamp="1607678662366">
+    <state x="393" y="177" key="Vcs.Push.Dialog.v2" timestamp="1608706536754">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="393" y="177" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606728793655" />
     <state x="1918" y="253" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604470888838" />
-    <state x="393" y="177" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607678662366" />
+    <state x="393" y="177" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1608706536754" />
     <state x="476" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608515326144">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -605,11 +630,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="762" y="222" key="scopes/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605751849319" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1608533111382">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1608888875914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1606983485342" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1608533111382" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1608888875914" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -646,13 +671,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/user-service/src/test/java/com/cloud/lz/userservice/UserServiceApplicationTests.java</url>
-          <line>34</line>
+          <line>70</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/user-service/src/test/java/com/cloud/lz/userservice/UserServiceApplicationTests.java</url>
-          <line>29</line>
+          <line>65</line>
           <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-service/src/main/java/com/cloud/lz/userservice/service/impl/UserServiceImpl.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sys-common/src/main/java/com/cloud/lz/advisor/DistributedTransactionAdvisor.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/alibaba/csp/sentinel-annotation-aspectj/1.6.3/sentinel-annotation-aspectj-1.6.3.jar!/com/alibaba/csp/sentinel/annotation/aspectj/SentinelResourceAspect.class</url>
+          <line>63</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/alibaba/csp/sentinel-annotation-aspectj/1.6.3/sentinel-annotation-aspectj-1.6.3.jar!/com/alibaba/csp/sentinel/annotation/aspectj/SentinelResourceAspect.class</url>
+          <line>42</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-service/src/main/java/com/cloud/lz/userservice/service/impl/UserServiceImpl.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="82" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,5 +1,6 @@
 package com.cloud.lz.userservice.service.impl;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.JSONStreamAware;
@@ -38,14 +39,29 @@ public class UserServiceImpl implements UserService {
     private UserService userService;
 
     @Override
+    @SentinelResource(value = "getUser",blockHandler = "getUserBlock", fallback = "getUserFallBack")
     public UserPojo getUserById(int id) {
 //        System.out.println("ooc =" + ooc);
 //        System.out.println("ood =" + ood);
 //        one.setName(ooc);
 //        one.setPassword(ood);
-        UserPojo one = userDao.getOne(id);
+        UserPojo one = new UserPojo();
+        one.setId(id);
+        one.setName("liuze"+id);
         return one;
     }
+
+    public UserPojo getUserFallBack(int id){
+        System.out.println("限流成功,服务降级--------");
+        return null;
+    }
+
+
+    public UserPojo getUserBlock(int id){
+        System.out.println("接口被限流------------");
+        return null;
+    }
+
 
     @Override
     @DistributedTransactional

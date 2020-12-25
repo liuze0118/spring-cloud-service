@@ -1,0 +1,11 @@
+[
+  {
+    "resource": "getUser",
+    "controlBehavior": 2,
+    "count": 4,
+    "grade": 1,
+    "limitApp": "default",
+    "strategy": 0
+  }
+
+]

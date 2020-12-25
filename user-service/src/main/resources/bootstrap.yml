@@ -18,6 +18,15 @@ spring:
       discovery:
         service-id: config-server
         enabled: true
+    sentinel:
+      enabled: true
+      datasource:
+        ds1:
+          file:
+            file: classPath:flowrule.json
+            data-type: json
+            rule-type: flow
+
   jpa:
       hibernate:
         ddl-auto: update
