@@ -2,10 +2,11 @@ package com.cloud.lz.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = {RedisAutoConfiguration.class})
 @EnableConfigServer
 @EnableEurekaClient
 public class ConfigServerApplication {

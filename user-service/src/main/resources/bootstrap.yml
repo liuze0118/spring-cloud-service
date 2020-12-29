@@ -79,7 +79,7 @@ feign:
 eureka:
   client:
     service-url:
-      defaultZone:  http://liuze:1234@localhost:8010/eureka/
+      defaultZone:  http://liuze:1234@47.94.237.238:8010/eureka/
     registry-fetch-interval-seconds: 30
   instance:
     instance-id:  ${spring.application.name}:${spring.application.instance_id:${random.value}}
