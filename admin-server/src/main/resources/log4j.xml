@@ -1,0 +1,50 @@
+<Configuration name="logback-dev-config" debug="true" scan="true" scanPeriod="60 seconds">
+    <property name="log_pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread]%logger -%msg%n"/>
+    <springProperty scope="context" name="logstash.server-addr" source="logging.file.server-addr"/>
+    <springProperty scope="context" name="log.path" source="logging.file.path"/>
+    <springProperty scope="context" name="log.name" source="spring.application.name"/>
+    <!--控制台-->
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>${log_pattern}</Pattern>
+        </encoder>
+    </appender>
+
+    <appender name="sysLogFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.path}/${log.name}-sys.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${log.path}/${log.name}-sys-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+            <maxHistory>60</maxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder>
+            <Pattern>${log_pattern}</Pattern>
+        </encoder>
+    </appender>
+
+    <appender name="stashLog" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        <destination>${logstash.server-addr}</destination>
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <pattern>
+                    <pattern>
+                        {
+                        "serviceName":"${log.name}",
+                        "spanId":"%X{X-B3-SpanId:-}",
+                        "traceId":"%X{X-B3-TraceId:-}",
+                        "message":"%msg%n"
+                        }
+                    </pattern>
+                </pattern>
+            </providers>
+        </encoder>
+        <keepAliveDuration>5 minutes</keepAliveDuration>
+    </appender>
+    <root level="info">
+        <appender-ref ref="Console"/>
+        <appender-ref ref="sysLogFile"/>
+        <appender-ref ref="stashLog"/>
+    </root>
+</Configuration>

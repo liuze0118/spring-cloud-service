@@ -1,5 +1,5 @@
 server:
-  port: 8030
+  port: 8013
 spring:
   rabbitmq:
     addresses: 47.94.237.238
@@ -18,7 +18,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://liuze:1234@localhost:8010/eureka/
+      defaultZone: http://liuze:1234@47.94.237.238:8010/eureka/
     registry-fetch-interval-seconds: 30
   instance:
     lease-expiration-duration-in-seconds: 90
@@ -40,5 +40,9 @@ management:
       exposure:
         include: "*"
 
-
+logging:
+  config: classpath:log4j.xml
+  file:
+    path: ./log
+    server-addr: 47.94.237.238:5044
 
