@@ -1,6 +1,7 @@
 package com.cloud.lz.userservice.service.impl;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.JSONStreamAware;
@@ -45,20 +46,25 @@ public class UserServiceImpl implements UserService {
 //        System.out.println("ood =" + ood);
 //        one.setName(ooc);
 //        one.setPassword(ood);
+        if(id == 3){
+            throw new RuntimeException("限流手动异常处理");
+        }
         UserPojo one = new UserPojo();
         one.setId(id);
         one.setName("liuze"+id);
         return one;
     }
 
-    public UserPojo getUserFallBack(int id){
-        System.out.println("限流成功,服务降级--------");
+    public UserPojo getUserFallBack(int id,Throwable throwable){
+        System.out.println(throwable.getMessage());
+        System.out.println(id + "_限流成功,服务降级--------");
         return null;
     }
 
 
-    public UserPojo getUserBlock(int id){
-        System.out.println("接口被限流------------");
+    public UserPojo getUserBlock(int id, BlockException e){
+        e.printStackTrace();
+        System.out.println(id + "_接口被限流------------");
         return null;
     }
 

@@ -25,4 +25,8 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-
+logging:
+  config: classpath:log4j.xml
+  file:
+    path: ./log
+    server-addr: 47.94.237.238:5044

@@ -2,12 +2,14 @@ package com.lz.cloud.eurekaserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
+import org.springframework.cloud.config.client.ConfigClientAutoConfiguration;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = {RedisAutoConfiguration.class, ConfigClientAutoConfiguration.class})
 @EnableEurekaServer
 public class EurekaServerApplication {
 
