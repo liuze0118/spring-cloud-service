@@ -9,6 +9,7 @@ import com.cloud.lz.annotation.DistributedTransactional;
 import com.cloud.lz.userservice.dao.UserDao;
 import com.cloud.lz.userservice.pojo.UserPojo;
 import com.cloud.lz.userservice.service.UserService;
+import lombok.Data;
 import lombok.extern.log4j.Log4j;
 import lombok.extern.slf4j.Slf4j;
 import org.codehaus.jettison.json.JSONString;
@@ -16,12 +17,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestTemplate;
 
 import java.lang.reflect.Field;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Executor;
 
@@ -68,6 +71,17 @@ public class UserServiceImpl implements UserService {
         return null;
     }
 
+    @Async("taskScheduler")
+    //@Scheduled(fixedRateString = "2000")
+    public void testScheduled(){
+        System.out.println(Thread.currentThread().getName()+"-"+new Date() +"-start-------");
+        try {
+            Thread.sleep(10*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(Thread.currentThread().getName()+"-"+new Date() +"end----------");
+    }
 
     @Override
     @DistributedTransactional

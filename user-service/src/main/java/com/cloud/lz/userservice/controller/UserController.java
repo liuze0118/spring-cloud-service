@@ -10,9 +10,11 @@ import org.springframework.core.env.Environment;
 import org.springframework.data.redis.connection.RedisClusterNode;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
@@ -31,6 +33,8 @@ public class UserController {
 //    private String oos;
 //    @Value("${dev.ood:2}")
 //    private String ood;
+    @Autowired
+    private RestTemplate restTemplate;
 
     @Autowired
     private Environment environment;
@@ -40,6 +44,15 @@ public class UserController {
 
     @Autowired
     private RedisTemplate redisTemplate;
+
+    @RequestMapping("/rpc")
+    @ResponseBody
+    public Map testRpc(){
+        String url = "http://order-service/order/get/1";
+        Map map = restTemplate.getForObject(url, Map.class);
+        System.out.println(map.get("id").toString()+map.get("code")+map.get("money"));
+        return map;
+    }
 
     @RequestMapping("/redis/lock/{name}")
     public String testRedisLock(@PathVariable String name) throws InterruptedException {

@@ -23,7 +23,7 @@ spring:
       datasource:
         ds1:
           file:
-            file: classPath:flowrule.json
+            file: flowrule.json
             data-type: json
             rule-type: flow
 
@@ -50,23 +50,28 @@ spring:
       useGlobalDataSourceStat: true
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
   redis:
-    cluster:
-      nodes:
-        - 47.94.237.238:7001
-        - 47.94.237.238:7002
-        - 47.94.237.238:7003
-        - 47.94.237.238:7004
-        - 47.94.237.238:7005
-        - 47.94.237.238:7006
-      max-redirects: 3
-    jedis:
-      pool:
-        max-active: 1024
-        max-idle: 8
-        max-wait: -1
-        min-idle: 2
-    timeout: 3000
+    host: 47.94.237.238
+    port: 6379
     password: 123456
+    database: 1
+#  redis:
+#    cluster:
+#      nodes:
+#        - 47.94.237.238:7001
+#        - 47.94.237.238:7002
+#        - 47.94.237.238:7003
+#        - 47.94.237.238:7004
+#        - 47.94.237.238:7005
+#        - 47.94.237.238:7006
+#      max-redirects: 3
+#    jedis:
+#      pool:
+#        max-active: 1024
+#        max-idle: 8
+#        max-wait: -1
+#        min-idle: 2
+#    timeout: 3000
+#    password: 123456
 feign:
   client:
     config:
@@ -81,10 +86,10 @@ eureka:
     service-url:
       defaultZone:  http://liuze:1234@47.94.237.238:8010/eureka/
     registry-fetch-interval-seconds: 30
-  instance:
-    instance-id:  ${spring.application.name}:${spring.application.instance_id:${random.value}}
-    lease-expiration-duration-in-seconds: 90
-    lease-renewal-interval-in-seconds: 30
+#  instance:
+#    instance-id:  ${spring.application.name}:${spring.application.instance_id:${random.value}}
+#    lease-expiration-duration-in-seconds: 90
+#    lease-renewal-interval-in-seconds: 30
 storage:
   type: minio
   minio:

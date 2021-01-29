@@ -17,7 +17,7 @@ eureka:
   instance:
     hostname: localhost
   server:
-    enable-self-preservation: true
+    enable-self-preservation: false
     eviction-interval-timer-in-ms: 600000
     renewal-percent-threshold: 0.85
   client:
