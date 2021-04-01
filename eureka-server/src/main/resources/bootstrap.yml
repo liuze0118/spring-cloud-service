@@ -3,11 +3,11 @@ server:
 spring:
   application:
     name: eureka-server
-  rabbitmq:
-    addresses: 47.94.237.238
-    port: 5672
-    username: admin
-    password: liuze0118
+#  rabbitmq:
+#    addresses: 47.94.237.238
+#    port: 5672
+#    username: admin
+#    password: liuze0118
   security:
     user:
       name: liuze
