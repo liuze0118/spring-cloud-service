@@ -2,7 +2,8 @@
     <property name="log_pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread]%logger -%msg%n"/>
     <springProperty scope="context" name="logstash.server-addr" source="logging.file.server-addr"/>
     <springProperty scope="context" name="log.path" source="logging.file.path"/>
-    <springProperty scope="context" name="log.name" source="spring.application.name"/>
+    <springProperty scope="context" name="
+" source="spring.application.name"/>
     <!--控制台-->
     <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">

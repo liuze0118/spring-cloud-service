@@ -7,7 +7,7 @@ spring:
     addresses: 47.94.237.238
     port: 5672
     username: admin
-    password: admin
+    password: liuze0118
   security:
     user:
       name: liuze
@@ -25,8 +25,8 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-logging:
-  config: classpath:log4j.xml
-  file:
-    path: ./log
-    server-addr: 47.94.237.238:5044
+#logging:
+#  config: classpath:log4j.xml
+#  file:
+#    path: ./log
+#    server-addr: 47.94.237.238:5044
