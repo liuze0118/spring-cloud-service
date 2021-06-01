@@ -15,7 +15,6 @@
         <module name="spi-server" />
         <module name="zuul-gateway" />
         <module name="user-service" />
-        <module name="sys-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -40,7 +39,7 @@
       <module name="order-service" options="-parameters" />
       <module name="spi-server" options="-parameters" />
       <module name="spring-cloud-service" options="-parameters" />
-      <module name="sys-common" options="-parameters" />
+      <module name="sys-common" options="" />
       <module name="user-service" options="-parameters" />
       <module name="zuul-gateway" options="-parameters" />
     </option>
