@@ -1,7 +1,6 @@
 package com.cloud.lz.config;
 
 import com.cloud.lz.vo.UserVo;
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.*;
 
