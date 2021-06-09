@@ -1,5 +1,5 @@
 <Configuration name="logback-dev-config" debug="true" scan="true" scanPeriod="60 seconds">
-    <property name="log_pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread]%logger -%msg%n"/>
+    <property name="log_pattern" value="|-%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread]%logger -%msg%n"/>
     <springProperty scope="context" name="logstash.server-addr" source="logging.file.server-addr"/>
     <springProperty scope="context" name="log.path" source="logging.file.path"/>
     <springProperty scope="context" name="log.name" source="spring.application.name"/>
