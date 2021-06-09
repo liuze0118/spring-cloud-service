@@ -20,16 +20,7 @@
             </timeBasedFileNamingAndTriggeringPolicy>
         </rollingPolicy>
         <encoder>
-            <pattern>
-                {
-                "serviceName":"${log.name}",
-                "spanId":"%X{X-B3-SpanId:-}",
-                "traceId":"%X{X-B3-TraceId:-}",
-                "timeStamp":"%d{yyyy-MM-dd HH:mm:ss}",
-                "level":"%-5level",
-                "message":"%msg%n"
-                }
-            </pattern>
+            <Pattern>${log_pattern}</Pattern>
         </encoder>
     </appender>
 
